@@ -1,3 +1,7 @@
 baseURL = "https://carsonhe.dev/"
 languageCode = "en-us"
 title = "Carson He"
+
+[caches]
+    [caches.images]
+        dir = ':cacheDir/images'
