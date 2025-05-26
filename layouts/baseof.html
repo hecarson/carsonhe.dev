@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>{{ .Page.Title }}</title>
-        <link rel="stylesheet" href="/main.css">
+        {{ $style := resources.Get "main.css" | resources.Minify }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}">
     </head>
 
     <body>
