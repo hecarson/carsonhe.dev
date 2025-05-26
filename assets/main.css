@@ -1,4 +1,17 @@
+@import url('https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css');
+
 body {
-    background-color: #303030;
+    background-color: #202020;
     color: #e0e0e0;
+    font-family: "Hack";
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    background-color: #303030;
+    display: flex;
+    max-width: 70rem;
+    margin: 1rem;
+    padding: 1rem 2rem;
 }
