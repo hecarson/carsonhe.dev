@@ -2,6 +2,8 @@ baseURL = "https://carsonhe.dev/"
 languageCode = "en-us"
 title = "Carson He"
 
+enableRobotsTXT = true
+
 [caches]
     [caches.images]
         dir = ':cacheDir/images'

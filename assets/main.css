@@ -1,17 +1,71 @@
 @import url('https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css');
 
-body {
-    background-color: #202020;
-    color: #e0e0e0;
+:root {
+    --bg-dark-color: #202020;
+    --bg-light-color: #303030;
+    --fg-color: #e0e0e0;
+    --accent-light-color: #a02020;
+    --accent-dark-color: #702020;
+    --link-hover-color: #a0a0a0;
+
+    color: var(--fg-color);
     font-family: "Hack";
-    display: flex;
-    justify-content: center;
 }
 
-.main {
-    background-color: #303030;
+a, a:visited {
+    color: var(--fg-color);
+}
+a:hover {
+    color: var(--link-hover-color);
+}
+
+body {
+    background-color: var(--bg-dark-color);
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
+
+.page {
+    flex-grow: 1;
     max-width: 70rem;
     margin: 1rem;
-    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+nav {
+    background-color: var(--accent-light-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    padding: 1rem 1.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+
+a.home-link {
+    background-color: var(--accent-dark-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+main {
+    background-color: var(--bg-light-color);
+    padding: 0rem 1rem;
 }
