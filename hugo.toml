@@ -4,6 +4,15 @@ title = "Carson He"
 
 enableRobotsTXT = true
 
+# https://gohugo.io/host-and-deploy/host-on-github-pages/
 [caches]
     [caches.images]
         dir = ':cacheDir/images'
+
+# https://gohugo.io/content-management/markdown-attributes/
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
