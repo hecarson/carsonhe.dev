@@ -3,18 +3,18 @@
     <head>
         <meta charset="utf-8" />
         <title>{{ .Page.Title }}</title>
+
+        <!-- TODO: meta info for embeds -->
+
+        <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
         {{ $icon := resources.Get "favicon.ico" }}
         {{ $style := resources.Get "main.css" }}
         <link rel="icon" href="{{ $icon.RelPermalink }}" />
         <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
-        <!-- TODO: meta info for embeds -->
     </head>
 
     <body>
-        <!-- https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer -->
-        <script>0</script>
-
         <div class="page">
             {{ partial "nav-bar" . }}
 
