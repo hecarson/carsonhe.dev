@@ -1,6 +1,6 @@
 +++
 title = "Carson He"
-description = "Welcome to my personal website"
+description = "Welcome to my personal website! I am a computer security master's student."
 +++
 
 # Welcome
