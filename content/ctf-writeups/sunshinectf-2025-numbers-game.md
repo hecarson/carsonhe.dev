@@ -31,7 +31,7 @@ numbers-game: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamical
 
 The binary is not stripped, so function names are preserved, making our job easier.
 
-Let's open the binary in Ghidra.
+Let's open the binary in Ghidra to decompile it.
 
 ```c
 undefined8 main(void)
