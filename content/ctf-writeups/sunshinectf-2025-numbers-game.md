@@ -3,7 +3,7 @@ date = '2025-10-26'
 title = "SunshineCTF 2025: Numbers Game"
 description = "Simple reverse engineering challenge from SunshineCTF 2025"
 layout = "post"
-draft = true
+draft = false
 
 [params]
 lastUpdatedDate = '2025-10-26'
