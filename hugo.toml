@@ -12,3 +12,16 @@ dir = ':cacheDir/images'
 [markup.goldmark.parser.attribute]
 block = true
 title = true
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]
+
+[params]
+math = true
+
+[markup.highlight]
+noClasses = false

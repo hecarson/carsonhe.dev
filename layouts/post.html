@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+<div class="dates-header">
+    <em>Published {{ .Date | time.Format "2006-01-02" }}</em>
+    <em>Last updated {{ .Params.lastUpdatedDate }}</em>
+</div>
+
+<div class="horiz-divider"></div>
+
+{{ .Content }}
+
+{{ end }}

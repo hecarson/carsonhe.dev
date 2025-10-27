@@ -1,20 +1,22 @@
 :root {
-    --bg-color1: #202020;
-    --bg-color2: #303030;
-    --bg-color3: #404040;
+    --bg-color1: #242020;
+    --bg-color2: #343030;
+    --bg-color3: #444040;
     --fg-color: #e0e0e0;
     --accent-color1: #702020;
     --accent-color2: #a02020;
-    --link-hover-color: #a0a0a0;
+    --link-hover-color: #b0b0b0;
+    --code-color: #e08080;
+    --font-size: 12px;
 
     color: var(--fg-color);
     font-family: "Hack";
 }
 
-p:first-child, h1:first-child {
+p:first-child, h1:first-child, h2:first-child, h3:first-child {
     margin-top: 0;
 }
-p:last-child, h1:last-child {
+p:last-child, h1:last-child, h2:last-child, h3:last-child {
     margin-bottom: 0;
 }
 a, a:visited {
@@ -87,4 +89,37 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.dates-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.horiz-divider {
+    height: 3px;
+    background-color: var(--fg-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+blockquote {
+    border-left: 3px solid;
+    padding-left: 1rem;
+    margin-left: 2rem;
+}
+
+code {
+    font-family: "Hack";
+    font-size: 1rem;
+}
+
+pre {
+    overflow: auto;
+    background-color: var(--bg-color1);
+    padding: 1rem;
+}
+
+p > code {
+    color: var(--code-color);
 }

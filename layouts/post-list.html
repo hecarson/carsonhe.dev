@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<h1>{{ .Page.Title }}</h1>
+<h1>{{ .Title }}</h1>
 
 {{ .Content }}
 
@@ -8,7 +8,7 @@
     {{ range .Pages.ByDate.Reverse }}
     <div class="page-entry">
         <a href="{{ .RelPermalink }}">
-            <div>{{ .Date | time.Format "2006-01-02" }} -- {{ .Title }}</div>
+            <div><em>{{ .Date | time.Format "2006-01-02" }}</em> -- {{ .Title }}</div>
             <div>{{ .Description }}</div>
         </a>
     </div>
