@@ -20,7 +20,7 @@ lastUpdatedDate = '2025-10-26'
 > `nc chal.sunshinectf.games 25101`
 
 Files:
-* [numbers-game](/sunshine2025/numbers-game)
+* [numbers-game](/sunshinectf2025/numbers-game)
 
 ## Initial Analysis
 
