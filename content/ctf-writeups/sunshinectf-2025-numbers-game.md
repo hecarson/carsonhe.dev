@@ -22,6 +22,12 @@ lastUpdatedDate = '2025-10-26'
 Files:
 * [numbers-game](/sunshinectf2025/numbers-game)
 
+## Tools used
+
+* Ghidra
+* Python with pwntools
+* gcc
+
 ## Initial Analysis
 
 ```
